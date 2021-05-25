@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: bold;
+  letter-spacing: 0.5vw;
+  text-transform: uppercase;
+  margin-top: 5%;
+}
+.contact__container {
+  width: 100vw;
+  height: 90vh;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  text-align: center;
+  background: linear-gradient(
+    -45deg,
+    #ee765285,
+    #e73c7e6c,
+    #23a5d565,
+    #23d5ab4d
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+form {
+  width: 30vw;
+  margin: 4% auto 0 auto;
+}
+input {
+  margin: 2% auto;
+}
+button {
+  text-transform: uppercase;
+  width: 10vw;
+  height: 3vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
